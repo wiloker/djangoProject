@@ -1,0 +1,84 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/tailwind/tailwind.css' %}">
+    <script src="{% static 'js/script.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/input.css' %}">
+</head>
+<body>
+<div class="flex flex-row top-pannel h-10  justify-between item-center content-center ">
+    <div class="flex flex-row my-auto mx-2 my-auto">
+        <img class='my-auto' src="{% static 'img/logo.png' %}" height="24" width="24" />
+        <div class="mx-2 flex item-center content-center barre-recherche">
+            <svg class="border-solid border-l-8 border-2 rounded-l-lg my-auto ml-2 h-full w-5 " id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0, 0, 400,400"><g id="svgg"><path id="path0" d="M143.238 1.234 C 31.543 11.990,-33.641 131.286,17.804 230.794 C 56.804 306.228,151.591 337.657,226.374 299.949 L 235.477 295.359 283.932 343.882 C 340.217 400.246,339.167 399.452,357.386 399.405 C 381.739 399.342,398.260 382.828,398.284 358.523 C 398.304 339.135,401.095 342.895,344.544 286.141 L 295.068 236.486 299.728 226.458 C 346.589 125.597,280.678 10.723,170.455 1.154 C 156.162 -0.087,156.984 -0.089,143.238 1.234 M180.114 45.043 C 268.550 61.820,303.677 172.982,241.046 237.865 C 175.152 306.129,60.082 270.875,43.713 177.408 C 29.867 98.346,100.382 29.918,180.114 45.043 " stroke="none" fill="#ffffff" fill-rule="evenodd"></path></g></svg>
+            <input class="w-56 h-9 rounded-r-lg">
+        </div>
+    </div>
+    <div class="my-auto mx-2 ">
+        <!--<button class="rounded bg-white px-1.5 py-0.5"> Sign In / Register </button>-->
+        <img class="rounded-full" src="../../static/img/logo.png" height="270" width="270"/></div>
+</div>
+<div class="flex flex-row mid-part">
+    <div class="border-pannel items-right flex flex-col">
+        <a class="mx-3">a</a>
+        <a class="mx-3">aaa</a>
+        <div class="absolute bottom-0 left-0 h-11 border_develop flex items-center " onclick="side_deploy()">
+            <a class=" flex flex-row mx-3 items-center align-middle">
+
+                <svg width="15" height="15" viewBox="0 0 398 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_3_7)">
+                        <path d="M181.8 314.7C190.4 306.1 197.5 298.7 197.5 298.3C197.5 298 168.1 268.3 132.1 232.3C96.2 196.4 66.6 166.4 66.3 165.6C66.1 164.8 68.3 161.9 71.4 159C81.1 150.1 197.5 33.4 197.5 32.7C197.5 32.3 190.3 24.8 181.5 16L165.5 5.24524e-08L82.8001 82.8L4.57764e-05 165.5L82.5 248C127.9 293.4 165.2 330.5 165.5 330.5C165.8 330.5 173.1 323.4 181.8 314.7Z" fill="black"/>
+                        <path d="M280.8 313.8L297 297.6L231 231.6C194.7 195.4 165 165.4 165 165.1C165 164.8 194.7 134.8 231 98.5999L297 32.5999L264.4 -6.10352e-05L182.2 82.1999C137 127.4 100 164.7 100 165.1C100 165.7 263.8 330.1 264.4 330.1C264.5 330.1 271.8 322.8 280.8 313.8Z" fill="black"/>
+                        <path d="M382.7 313.9L398.5 297.9L265.8 165.2L398.5 32.4999L365.9 0.099884L200.8 165.2L283.3 247.7C328.7 293.1 366 330.1 366.3 330.1C366.6 330 373.9 322.7 382.7 313.9Z" fill="black"/>
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_3_7" x="-3.99995" y="-6.10352e-05" width="406.5" height="338.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_7"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_7" result="shape"/>
+                        </filter>
+                    </defs>
+                    <animate dur="5s" repeatCount="indefinite"
+                             attributeName="d"
+                             values="M 100,50 300, 50 300,250;
+		     M 100,50 100,250 300,250;
+		     M 100,50 300, 50 300,250;"/>
+                 </svg>
+
+                <p class="mx-2 hidden">
+                    Reduire
+                </p>
+            </a>
+        </div>
+    </div>
+    <div>
+        {{ body }}
+    </div>
+</div>
+<div class="z-10 -mt-11 ">
+    <div class="z-10 player w-9/12 h-11 m-auto rounded-t-lg flex items-center justify-between">
+
+        <div>
+            a
+        </div>
+        <div class="">
+            <input type="range" />
+        </div>
+        <div>
+            a
+        </div>
+
+    </div>
+</div>
+</body>
+
+</html>
